@@ -1,0 +1,26 @@
+{
+  "name": "@mixint/pathunlink",
+  "version": "1.0.0",
+  "description": "A Transflect stream that does nothing but call fs.unlink and return 204 or the error",
+  "main": "PathUnlink.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mixint/pathunlink.git"
+  },
+  "keywords": [
+    "fs",
+    "filesystem",
+    "path",
+    "transflect",
+    "delete"
+  ],
+  "author": "Colten Jackson",
+  "license": "SEE LICENSE IN CONTINUITY.LICENSE",
+  "bugs": {
+    "url": "https://github.com/mixint/pathunlink/issues"
+  },
+  "homepage": "https://github.com/mixint/pathunlink#readme"
+}
