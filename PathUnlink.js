@@ -1,7 +1,7 @@
 let Transflect = require('@mixint/transflect')
 let fs = require('fs')
 
-/*
+/**
  * @extends Transflect
  * no need to _open(source) a stream here, source is available as this.source
  */
@@ -11,8 +11,6 @@ module.exports = class PathUnlink extends Transflect {
     }
 
     /**
-     * @private
-     * @param {Function} done - called when ready to close the stream
      * set statusCode 204 finished delete, no content to return
      * if unlink calls done with an error, PathUnlink emits error,
      * ServerFailSoft writes error object to client and overwrites statusCode
