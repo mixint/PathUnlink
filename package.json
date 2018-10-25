@@ -1,6 +1,6 @@
 {
   "name": "@mixint/pathunlink",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A Transflect stream that does nothing but call fs.unlink and return 204 or the error",
   "main": "PathUnlink.js",
   "scripts": {
