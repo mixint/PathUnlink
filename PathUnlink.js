@@ -6,17 +6,15 @@ let fs = require('fs')
  * no need to _open(source) a stream here, source is available as this.source
  */
 module.exports = class PathUnlink extends Transflect {
-    constructor(options){
-        super(options)
-    }
+    constructor(){ super() }
 
     /**
      * set statusCode 204 finished delete, no content to return
      * if unlink calls done with an error, PathUnlink emits error,
      * ServerFailSoft writes error object to client and overwrites statusCode
      */
-    _flush(done){
-        this.statusCode = 204
+    _end(done){
+        this.pipes.statusCode = 204
         fs.unlink(this.source.pathname, done)
     }
 }
